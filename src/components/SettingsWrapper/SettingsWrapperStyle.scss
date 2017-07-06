@@ -1,22 +1,21 @@
 .settings_grid {
-    position: relative;
-    width: 50%;
-    text-align: center;
-    .device_name {
-        position: absolute;
-        top: 0;
-        left: 5px;
-        z-index: 2;
-        color: #2f323b;
-    }
-    .delete_device_settings {
-        position: absolute;
-        top: -6.5px;
-        right: 57px;
-        z-index: 2;
-        background-color: transparent;
-    }
+    display: flex;
+    align-items: center;
+    height: 150px;
+    justify-content: center;
+    background-color: #44464f 
 }
+.name_and_button{
+    display: flex;
+    background-color: #f6a821;
+    justify-content: space-between;
+    align-items: baseline;
+    color: #2f323b;
+    }
+.delete_device_settings {
+     background-color: transparent;
+    }
+
 
 .delete_device_settings {
     display: flex;

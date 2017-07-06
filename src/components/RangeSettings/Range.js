@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './RangeStyle.scss';
+import '../SettingsWrapper/SettingsWrapperStyle.scss';
 
 export default class RangeSettings extends React.Component {
 
@@ -24,10 +25,6 @@ export default class RangeSettings extends React.Component {
     const { max, min } = this.props;
 
     return (
-      <div className='settings_block'>
-      <span className='top_border'>
-      <p className='range_value'>
-          {this.state.value}</p>
         <input
           type='range'
           onChange={ this.onChange }
@@ -36,8 +33,6 @@ export default class RangeSettings extends React.Component {
           step={1}
           defaultValue={0}
         />
-        </span>
-        </div>
     );
   }
 }

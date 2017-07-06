@@ -31,7 +31,6 @@ export default class TimerSettings extends React.Component {
   render () {
     return (
       <div className='settings_block'>
-      <span className='top_border'>
       <div className="quantity">
          <input
             type="time"
@@ -43,7 +42,6 @@ export default class TimerSettings extends React.Component {
             onChange={this.onChangeTime}
           />
         </div>
-        </span>
       </div>
     );
   }

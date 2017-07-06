@@ -20,10 +20,12 @@ export default class SettingsWrapper extends React.Component {
   render () {
     return (
       <div className='settings_grid'>
-        <p className='device_name'>{this.props.name}</p>
+      <div className='name_and_button'>
+        <p>{this.props.name}</p>
         <button className='delete_device_settings'
           onClick={()=>this.props.deleteItem(this.props.id)}
         />
+        </div>
         {this.props.children}
       </div>
     );

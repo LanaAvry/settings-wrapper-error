@@ -25,8 +25,6 @@ export default class ToggleSettings extends React.Component {
   render () {
     return (
       <div className='settings_block'>
-      <span className='top_border'>
-      <div className='device-item__info'>
           <div className="device-item__info-status">
             <label className="switch">
               <input type="checkbox" checked={this.state.value}
@@ -34,8 +32,6 @@ export default class ToggleSettings extends React.Component {
               <div className="slider round"></div>
             </label>
           </div>
-        </div>
-      </span>
       </div>
     );
   }
