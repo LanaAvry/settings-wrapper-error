@@ -32,7 +32,7 @@ export default class ValueSettings extends React.Component {
 
   render () {
     return (
-      <div className='settings_block'>
+      <div>
         <input
           type='text'
           className='value_input'
@@ -50,5 +50,5 @@ export default class ValueSettings extends React.Component {
 
 ValueSettings.propTypes = {
   value: PropTypes.string,
-  sendSearchValue: PropTypes.string.isRequired
+  sendSearchValue: PropTypes.string
 };

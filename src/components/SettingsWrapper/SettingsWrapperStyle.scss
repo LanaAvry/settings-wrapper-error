@@ -1,23 +1,23 @@
-.settings_grid {
-    display: flex;
-    align-items: center;
+.settings {
+    max-width: 35%;
     height: 150px;
-    justify-content: center;
-    background-color: #44464f 
-}
-.name_and_button{
+    // margin-bottom: 20px;
+    // margin-left: 0 auto;
+    margin: 5% 5%;
+    background-color: #44464f;
+} 
+.item-header{
     display: flex;
     background-color: #f6a821;
     justify-content: space-between;
     align-items: baseline;
     color: #2f323b;
     }
-.delete_device_settings {
+.item-header__delete-btn {
      background-color: transparent;
-    }
+ }
 
-
-.delete_device_settings {
+.item-header__delete-btn {
     display: flex;
     text-align: center;
     vertical-align: middle;
@@ -26,19 +26,18 @@
     border-radius: 20px;
     font: normal normal bold 13px arial;
     color: #111111;
-    background-color: white;
     text-decoration: none;
 }
-.delete_device_settings:hover,
-.delete_device_settings:focus {
+.item-header__delete-btn:hover,
+.item-header__delete-btn:focus {
     border: 0px solid #ffffff;
     color: #111111;
     text-decoration: none;
 }
-.delete_device_settings:active {
+.item-header__delete-btn:active {
     background: linear-gradient(to bottom, #b3b3b3, #b3b3b3);
-}
-.delete_device_settings:before{
+} 
+.item-header__delete-btn:before{
     content:  "\0000a0";
     display: inline-block;
     height: 18px;
